@@ -31,7 +31,9 @@ app.add_middleware(
         "http://127.0.0.1:5173",
         "http://localhost:3000",
         "http://127.0.0.1:3000",
-        "*"  # Remove this in production
+        "https://ai-playground-hub.vercel.app/login",
+        "https://ai-playground-hub.vercel.app",
+        "https://ai-playground-hub.vercel.app/*",  # Allow all subpaths
     ],
     allow_credentials=True,
     allow_methods=["*"],
